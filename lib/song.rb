@@ -33,13 +33,13 @@ class Song
   end 
   
   def self.new_from_filename(filename)
-    split_file = filename.split("-")
+    split_file = filename.split(" - ")
     song = split_file[1]
     self.new_by_name(song)
   end 
   
   def self.create_from_filename(filename)
-    split_file = filename.split("-")
+    split_file = filename.split(" - ")
     name = split_file[1]
     song = self.create_by_name(name)
     song
