@@ -37,6 +37,12 @@ class Song
     song = split_file[0]
     self.new_by_name(song)
   end 
+  
+  def self.new_from_filename(filename)
+    split_file = filename.split("-")
+    song = split_file[0]
+    self.new_by_name(song)
+  end 
 
   def self.find_by_name(name)
     self.all.find do |song|
