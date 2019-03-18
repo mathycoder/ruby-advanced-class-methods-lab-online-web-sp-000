@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -32,6 +34,7 @@ class Song
 
   def self.find_by_name(name)
     self.all.find do |song|
+      include.pry 
       song.name == song 
         
     end 
