@@ -43,7 +43,7 @@ class Song
     artist = split_file[0]
     name = split_file[1].split(".")[0]
     song = self.create_by_name(name)
-    song.artist = artist 
+    song.artist_name = artist 
     song
   end 
 
