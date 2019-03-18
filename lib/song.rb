@@ -40,8 +40,9 @@ class Song
   
   def self.create_from_filename(filename)
     split_file = filename.split("-")
-    song = split_file[0]
-    self.create_by_name(song)
+    name = split_file[0]
+    song = self.create_by_name(name)
+    song
   end 
 
   def self.find_by_name(name)
