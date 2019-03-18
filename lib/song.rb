@@ -31,6 +31,10 @@ class Song
     song.save 
     song 
   end 
+  
+  def self.new_from_filename(filename)
+    
+  end 
 
   def self.find_by_name(name)
     self.all.find do |song|
