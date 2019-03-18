@@ -15,6 +15,7 @@ class Song
     song.name = name 
     song.artit = artist_name 
     song.save 
+    song 
   end 
 
 end
