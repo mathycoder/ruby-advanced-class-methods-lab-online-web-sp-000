@@ -40,3 +40,4 @@ class Song
 end
 
 Song.create_by_name("The Middle")
+Song.find_by_name("The Middle")
