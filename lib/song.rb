@@ -45,7 +45,11 @@ class Song
       self.find_by_name(name)
     end 
   end 
-
+  
+  def self.alphabetical
+  end 
+  
+  
 end
 
 Song.create_by_name("The Middle")
