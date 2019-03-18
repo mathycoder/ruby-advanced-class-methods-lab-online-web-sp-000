@@ -38,3 +38,5 @@ class Song
   end 
 
 end
+
+Song.create_by_name("The Middle")
